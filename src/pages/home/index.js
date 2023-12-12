@@ -15,10 +15,19 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
-          ></div>
+        <div
+          className="h_bg-image order-1 order-lg-2 h-100"
+          style={{
+            backgroundImage: `url(${introdata.your_img_url})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            borderRadius: '40%', // This will make it circular
+            width: '500px', // Adjust the width as needed
+            height: '10px', // Adjust the height to make it an oval
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
+
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
@@ -33,6 +42,10 @@ export const Home = () => {
                         introdata.animated.fourth,
                         introdata.animated.fifth,
                         introdata.animated.sixth,
+                        introdata.animated.seventh,
+                        introdata.animated.eighth,
+                        introdata.animated.ninth,
+                        introdata.animated.tenth,
                       ],
                       autoStart: true,
                       loop: true,
@@ -58,14 +71,15 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                  <a href="https://i.postimg.cc/zfZW5C8S/Devireddy-Sreechandh-Resume.png" target="_blank">
+                  <div id="button_h" className="ac_btn btn">
+                      Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
-                    </div>
-                  </Link>
+                      <div className="ring three"></div>
+                  </div>
+              </a>
                 </div>
               </div>
             </div>

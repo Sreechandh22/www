@@ -46,16 +46,23 @@ const Headermain = () => {
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
                   </li>
+                  <li className="menu_item">
+                  <a 
+                      href="https://i.postimg.cc/zfZW5C8S/Devireddy-Sreechandh-Resume.png" 
+                      target="_blank" 
+                      className="my-3" 
+                      onClick={(e) => {
+                          e.preventDefault(); // Prevent default anchor link behavior
+                          handleToggle(); // Your toggle function
+                          window.open("https://i.postimg.cc/zfZW5C8S/Devireddy-Sreechandh-Resume.png", "_blank"); // Open the resume link in a new tab
+                      }}
+                  >
+                      Resume
+                  </a>
+              </li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
-            <div className="d-flex">
-            <a href={socialprofils.linkedin}>LinkedIn</a>
-            <a href={socialprofils.github}>Github</a>
-            </div>
-            <p className="copyright m-0">copyright {logotext}</p>
           </div>
         </div>
       </header>

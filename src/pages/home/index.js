@@ -71,7 +71,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <a href="https://i.postimg.cc/zfZW5C8S/Devireddy-Sreechandh-Resume.png" target="_blank">
+                  <a href="https://drive.google.com/file/d/1_wyrK_MVXlGTELSRgXMk4KIUBsAfJHSg/view" target="_blank">
                   <div id="button_h" className="ac_btn btn">
                       Resume
                       <div className="ring one"></div>

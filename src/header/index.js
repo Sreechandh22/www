@@ -48,13 +48,13 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                   <a 
-                      href="https://i.postimg.cc/zfZW5C8S/Devireddy-Sreechandh-Resume.png" 
+                      href="https://drive.google.com/file/d/1_wyrK_MVXlGTELSRgXMk4KIUBsAfJHSg/view" 
                       target="_blank" 
                       className="my-3" 
                       onClick={(e) => {
                           e.preventDefault(); // Prevent default anchor link behavior
                           handleToggle(); // Your toggle function
-                          window.open("https://i.postimg.cc/zfZW5C8S/Devireddy-Sreechandh-Resume.png", "_blank"); // Open the resume link in a new tab
+                          window.open("https://drive.google.com/file/d/1_wyrK_MVXlGTELSRgXMk4KIUBsAfJHSg/view", "_blank"); // Open the resume link in a new tab
                       }}
                   >
                       Resume

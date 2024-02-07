@@ -27,7 +27,7 @@ const introdata = {
 
 const dataabout = {
     title: "But... Who am I?",
-    aboutme: "Hello world! \n\n I'm Sreechandh Devireddy, a computer science enthusiast who believes code can save the world, or at least make it a bit less confusing. When I'm not busy being a human debugger or a code whisperer at Arizona State University, you can find me diving deep into AI models, like that time I tackled the Nepal Water Crisis with nothing but TensorFlow and sheer determination. My stint at Sreehomes? Think of it as my 'Monopoly' phase, where I played with economic algorithms like a pro, turning code into gold. As an IBM Barrett Research Fellow, I’m not just analyzing data; I’m on a first-name basis with every pixel in those medical records, helping forecast colon cancer risks. And my personal project, the AI-powered skin cancer app, wasn’t just a coding sprint - it was a marathon with a cause, sprinting past the finish line of innovation. Off the clock, I might be found philosophizing about how my next project could be the next big thing or contemplating the mysteries of the universe, like why printers never work when you need them most. In a nutshell, I'm the guy who's turning caffeine and pizza into smart solutions and maybe, just occasionally, into the latest meme."
+    aboutme: "Hello world! \n\n I'm Sreechandh Devireddy, a computer science enthusiast who believes code can save the world, or at least make it a bit less confusing. When I'm not busy being a human debugger or a code whisperer at Arizona State University, you can find me diving deep into AI models, like that time I tackled the Nepal Water Crisis with nothing but TensorFlow and sheer determination. My stint at IBM? Think of it as my 'Monopoly' phase, where I played with economic algorithms like a pro, turning code into gold. As an IBM Barrett Research Fellow, I’m not just analyzing data; I’m on a first-name basis with every pixel in those medical records, helping forecast colon cancer risks. And my personal project, the AI-powered skin cancer app, wasn’t just a coding sprint - it was a marathon with a cause, sprinting past the finish line of innovation. Off the clock, I might be found philosophizing about how my next project could be the next big thing or contemplating the mysteries of the universe, like why printers never work when you need them most. In a nutshell, I'm the guy who's turning caffeine and pizza into smart solutions and maybe, just occasionally, into the latest meme."
     
     ,
 };
@@ -82,9 +82,9 @@ const worktimeline = [{
         date: "2023",
     },
     {
-        jobtitle: "Software Engineering Intern",
-        where: "SreeHomes",
-        date: "2023",
+        jobtitle: "Technological Consultant",
+        where: "Arizona State University",
+        date: "2024",
     },
     {
         jobtitle: "Teaching Assistant",

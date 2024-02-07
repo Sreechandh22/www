@@ -36,7 +36,7 @@ const ResumeComponent = () => {
     const [showImage, setShowImage] = useState(false);
 
     const resume = {
-        resumeLink: "https://drive.google.com/file/d/1_wyrK_MVXlGTELSRgXMk4KIUBsAfJHSg/view",
+        resumeLink: "https://drive.google.com/file/d/1mKNBSwNHY3_-9T6stQQkktx68_QU_gc6/view",
         title: "My Resume",
         description: "Explore my professional journey, technical skills, and academic achievements.",
         downloadText: "View Resume",

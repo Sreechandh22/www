@@ -54,7 +54,7 @@ const Headermain = () => {
                       onClick={(e) => {
                           e.preventDefault(); // Prevent default anchor link behavior
                           handleToggle(); // Your toggle function
-                          window.open("https://drive.google.com/file/d/1_wyrK_MVXlGTELSRgXMk4KIUBsAfJHSg/view", "_blank"); // Open the resume link in a new tab
+                          window.open("https://drive.google.com/file/d/1mKNBSwNHY3_-9T6stQQkktx68_QU_gc6/view", "_blank"); // Open the resume link in a new tab
                       }}
                   >
                       Resume

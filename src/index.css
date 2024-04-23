@@ -18,55 +18,50 @@
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
-html,
-body {
+html, body {
     height: 100%;
-}
-
-body {
     margin: 0;
-    height: 100%;
+    padding: 0;
     overflow-x: hidden;
-    overflow-y: visible;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Courier New', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-top: 60px;
-    border-left: 10px solid var(--primary-color);
-    border-right: 10px solid var(--primary-color);
+}
+
+body {
+    padding-top: 5%; /* Relative padding */
+    border-left: 1vw solid var(--primary-color); /* Viewport relative border */
+    border-right: 1vw solid var(--primary-color);
 }
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Courier New', sans-serif;
+    margin: 0 1rem;
 }
 
-a,
-a:hover {
+a, a:hover {
     color: var(--text-color);
+    text-decoration: none; /* Optional: Removes underline */
 }
 
 p {
     word-break: break-word;
     hyphens: auto;
+    padding: 0 1rem;
 }
 
 .ovhidden {
     overflow: hidden;
 }
 
-.text_2,
-.text_2:hover {
+.text_2, .text_2:hover {
     color: var(--text-color-2);
 }
 
@@ -83,11 +78,11 @@ code {
 }
 
 .green-text {
-    color: #20ec53; /* This is a green color */
-  }
+    color: #20ec53;
+}
   
-  img {
-    width: 800px;
-    height: 415px;
-  }
-  
+img {
+    width: 100%; /* Full width on small screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 800px; /* Maximum width */
+}

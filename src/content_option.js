@@ -1,5 +1,5 @@
 const logotext = "SD";
-{ <div style={{ color: '#20ec53', fontSize: '50px' }}>{logotext}</div> }
+{ <div style={{ color: '#20ec53', fontSize: '100px' }}>{logotext}</div> }
 
 const meta = {
     title: "Sreechandh",

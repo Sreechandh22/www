@@ -1,5 +1,5 @@
 const logotext = "SD";
-{ <div style={{ color: '#20ec53', fontSize: '24px' }}>{logotext}</div> }
+{ <div style={{ color: '#20ec53', fontSize: '50px' }}>{logotext}</div> }
 
 const meta = {
     title: "Sreechandh",
@@ -131,7 +131,7 @@ const dataportfolio = [{
     },
     {
         img: "https://i.postimg.cc/9FGkPp0s/DALL-E-2023-12-11-19-59-17-An-image-illustrating-the-Safe-Side-project-a-cutting-edge-emergency.png",
-        description: "In a lifesaving blend of tech and emergency preparedness, I led the development of SafeSide– a mobile app designed to guide users during active shooter situations with real-time, data-driven evacuation routes, helping to navigate crises with clarity and confidence. ",
+        description: "In a lifesaving blend of tech and emergency preparedness, I led the development of SafeSide– a mobile app designed to guide users during active shooter situations with real-time, data-driven evacuation routes. ",
         link: "https://docs.google.com/presentation/d/1EUVMYWGnS6hZUFlFK_QXBeGXTspLorB16OprJDfExcg/edit#slide=id.g2118dbc31e5_1_100",
     },
     {

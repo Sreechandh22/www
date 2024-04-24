@@ -12,13 +12,11 @@ const introdata = {
         first: "Technologist",
         second: "Grand Challenge Scholar",
         third: "New American University Scholar",
-        fourth: "Programmer",
+        fourth: "Backend Developer",
         fifth: "ML Developer",
         sixth: "AI Enthusiast",
-        seventh: "Ambidextrous",
-        eighth: "Backend Developer",
-        ninth: "Frontend Developer",
-        tenth: "Funny",
+        seventh: "Frontend Developer",
+        eighth: "Funny",
         // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
     },
     description: "An inventive student who transforms complex challenges into elegant technological solutions with a passion for data-driven impact and a zest for continuous learning.",
@@ -133,7 +131,7 @@ const dataportfolio = [{
     },
     {
         img: "https://i.postimg.cc/9FGkPp0s/DALL-E-2023-12-11-19-59-17-An-image-illustrating-the-Safe-Side-project-a-cutting-edge-emergency.png",
-        description: "In a lifesaving blend of tech and emergency preparedness, I led the development of SafeSide– a mobile app designed to guide users during active shooter situations with real-time, data-driven evacuation routes, helping to navigate crises with clarity and confidence. ",
+        description: "In a lifesaving blend of tech and emergency preparedness, I led the development of SafeSide– a mobile app designed to guide users during active shooter situations with real-time, data-driven evacuation routes. ",
         link: "https://docs.google.com/presentation/d/1EUVMYWGnS6hZUFlFK_QXBeGXTspLorB16OprJDfExcg/edit#slide=id.g2118dbc31e5_1_100",
     },
     {

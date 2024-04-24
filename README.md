@@ -20,16 +20,23 @@ Installation
 3) Install dependencies:
    yarn install
 4) Running the Development Server
+   
    To start the development server:
    yarn dev
+
+   
 Then, open http://localhost:3000 in your browser to view the application.
 
 Project Structure
+
 public/: Contains static files like images and favicon.
+
 src/: Source files for the project, including components, styles, and utilities.
 .env: Environment variables for the project (ensure not to expose sensitive information).
 .gitignore: Specifies intentionally untracked files to ignore.
+
 LICENSE: The license file for the project.
+
 README.md: The file you are currently reading.
 package.json: Defines npm behaviors and lists the dependencies.
 yarn.lock: Automatically generated file based on the exact versions of your npm dependencies that were installed for your project.

@@ -6,15 +6,19 @@
 
 .page-enter {
     transform: translateY(100%);
+    -webkit-transform: translateY(100%); /* Prefix for Safari and older browsers */
 }
 
 .page-enter-active {
     transform: translateY(0%);
+    -webkit-transform: translateY(0%); /* Prefix for Safari and older browsers */
     transition: all 400ms ease-out;
+    -webkit-transition: all 400ms ease-out; /* Prefix for Safari and older browsers */
 }
 
 .page-exit {
     transform: translateY(0%);
+    -webkit-transform: translateY(0%); /* Prefix for Safari and older browsers */
     position: absolute;
     left: 0;
     right: 0;
@@ -27,7 +31,9 @@
     right: 0;
     top: 0;
     transform: translateY(-130%);
+    -webkit-transform: translateY(-130%); /* Prefix for Safari and older browsers */
     transition: all 400ms ease-out;
+    -webkit-transition: all 400ms ease-out; /* Prefix for Safari and older browsers */
 }
 
 @media (min-width: 1400px) {

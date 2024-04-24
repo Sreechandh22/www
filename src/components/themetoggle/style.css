@@ -1,12 +1,12 @@
 .theme_toggler {
-    background: var(--primary-color);
-    z-index: 999999999;
+    background: var(--primary-color); /* Duplicate property removed */
+    z-index: 9999; /* Reduced the z-index to a more reasonable value */
     left: 10px;
-    background: var(--primary-color);
     display: flex;
     height: 50px;
     align-items: center;
     padding-left: 10px;
+    position: fixed; /* Added if the toggler is meant to be fixed on the page */
 }
 
 .theme_toggler svg {

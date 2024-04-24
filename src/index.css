@@ -18,7 +18,8 @@
     --overlay-color: rgb(255 255 255 / 70%);
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -31,8 +32,10 @@ html, body {
 }
 
 body {
-    padding-top: 5%; /* Relative padding */
-    border-left: 1vw solid var(--primary-color); /* Viewport relative border */
+    padding-top: 5%;
+    /* Relative padding */
+    border-left: 1vw solid var(--primary-color);
+    /* Viewport relative border */
     border-right: 1vw solid var(--primary-color);
 }
 
@@ -41,27 +44,37 @@ ul {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Courier New', sans-serif;
     margin: 0 1rem;
 }
 
-a, a:hover {
+a,
+a:hover {
     color: var(--text-color);
-    text-decoration: none; /* Optional: Removes underline */
+    text-decoration: none;
+    /* Optional: Removes underline */
 }
 
 p {
     word-break: break-word;
-    hyphens: auto;
+    hyphens: auto; /* Standard syntax */
+    -webkit-hyphens: auto; /* Prefix for Safari 5.1+ and Safari on iOS 4.2+ */
     padding: 0 1rem;
 }
+
 
 .ovhidden {
     overflow: hidden;
 }
 
-.text_2, .text_2:hover {
+.text_2,
+.text_2:hover {
     color: var(--text-color-2);
 }
 
@@ -80,9 +93,12 @@ code {
 .green-text {
     color: #20ec53;
 }
-  
+
 img {
-    width: 100%; /* Full width on small screens */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 800px; /* Maximum width */
+    width: 100%;
+    /* Full width on small screens */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-width: 800px;
+    /* Maximum width */
 }

@@ -5,6 +5,7 @@
     height: 200px;
     position: fixed;
     margin-top: -100px;
+    transition: all .3s; /* Smooth transition for any changes */
 }
 
 .stick_follow_icon ul {
@@ -16,7 +17,7 @@
 .stick_follow_icon svg {
     width: 1.3em;
     height: 1.3em;
-    fill: var(--text-color)
+    fill: var(--text-color);
 }
 
 .stick_follow_icon p {
@@ -30,7 +31,7 @@
     line-height: 1.2;
     white-space: nowrap;
     position: relative;
-    transform: rotate( -90deg);
+    transform: rotate(-90deg);
 }
 
 .stick_follow_icon ul li {
@@ -38,7 +39,7 @@
     font-size: 12px;
     text-align: center;
     margin-bottom: 10px;
-    transition: all .3s;
+    transition: all .3s; /* Ensure transitions apply to layout changes */
 }
 
 .stick_follow_icon p:after {
@@ -71,7 +72,7 @@
         height: unset;
         white-space: nowrap;
         position: relative;
-        transform: unset;
+        transform: none;
         font-size: 17px;
         margin-right: 65px;
     }

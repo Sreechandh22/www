@@ -44,9 +44,6 @@ const Headermain = () => {
                   <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
-                  </li>
-                  <li className="menu_item">
                   <a 
                       href="https://drive.google.com/file/d/1mKNBSwNHY3_-9T6stQQkktx68_QU_gc6/view" 
                       target="_blank" 
@@ -60,6 +57,9 @@ const Headermain = () => {
                       Resume
                   </a>
               </li>
+                  <li className="menu_item">
+                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                  </li>
                 </ul>
               </div>
             </div>

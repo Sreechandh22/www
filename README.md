@@ -41,7 +41,8 @@ yarn build
 This compiles the application to the build/ directory, optimizing the build for the best performance.
 
 Deployment
-This project is set up to deploy on Netlify, taking advantage of its continuous deployment from GitHub. Commit your changes to the main branch to trigger a deployment automatically.
+This project is set up to deploy on Netlify, taking advantage of its continuous deployment from GitHub. 
+Commit your changes to the main branch to trigger a deployment automatically.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.

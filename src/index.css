@@ -97,7 +97,7 @@ code {
 img {
     width: auto;
     /* Full width on small screens */
-    height: auto;
+    height: 33%;
     /* Maintain aspect ratio */
 /*     max-width: 800px;
     /* Maximum width */ */

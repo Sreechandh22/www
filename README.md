@@ -3,9 +3,12 @@ This portfolio website showcases my professional journey, projects, and skills. 
 Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Prerequisites
+Prerequisites:
+
 Before you begin, ensure you have the following tools installed:
+
 [Node.js] (https://nodejs.org/docs/latest/api/)
+
 [Yarn package manager](https://yarnpkg.com/)
 
 You can verify the installations by running:

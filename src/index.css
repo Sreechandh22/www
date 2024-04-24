@@ -99,6 +99,6 @@ img {
     /* Full width on small screens */
     height: auto;
     /* Maintain aspect ratio */
-    max-width: 800px;
-    /* Maximum width */
+/*     max-width: 800px;
+    /* Maximum width */ */
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Row, Col, Card, Container } from "react-bootstrap";
@@ -10,6 +10,16 @@ import {
 } from "../../content_option";
 
 export const About = () => {
+  const iframeRef = useRef(null);
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (iframe) {
+      const src = iframe.src;
+      iframe.src = src + "&autoplay=1";
+    }
+  }, []);
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -22,6 +32,20 @@ export const About = () => {
           <Col lg="8">
             <h1 className="display-4 mb-4">About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="12">
+            <iframe
+              ref={iframeRef}
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/track/44AyOl4qVkzS48vBsbNXaC?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
           </Col>
         </Row>
         <Row className="sec_sp">

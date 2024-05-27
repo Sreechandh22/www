@@ -16,7 +16,7 @@ export const About = () => {
     const iframe = iframeRef.current;
     if (iframe) {
       const src = iframe.src;
-      iframe.src = src + "&autoplay=1";
+      iframe.src = `${src}&autoplay=1`;
     }
   }, []);
 

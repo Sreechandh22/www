@@ -153,33 +153,39 @@ const skills = [
 
 const dataportfolio = [{
         img: "https://i.postimg.cc/vmYPbwQv/DALL-E-2023-12-11-19-45-11-An-illustration-representing-Sreechandh-Devireddy-s-research-project-on.png",
-        description: "In a fusion of AI and healthcare, my project with IBM in 2023 revolutionized colorectal cancer risk prediction, harnessing TensorFlow and PyTorch's power ",
+        description: "AI-powered cancer prediction ",
         link: "https://github.com/Sreechandh22/ClinicalBert",
+    },
+    // {
+    //     img: "https://i.postimg.cc/15QSZ4qh/DALL-E-2023-12-11-20-17-33-A-portrait-image-showcasing-the-Special-Wheels-project-associated-wit.png",
+    //     description: "Enhanced special-needs go-kart",
+    //     link: "https://www.youtube.com/watch?v=CbzaHm2dbsY",
+    // },
+    {
+        img: "https://i.postimg.cc/66VssF63/DALL-E-2024-07-20-21-12-03-An-accurate-representation-of-the-Varuna-Springs-project-focused-on-gro.webp",
+        description: "Accurate groundwater mapping",
+        link: "https://github.com/Sreechandh22/Groundwater-Algorithm",
+    },
+    {
+        img: "https://i.postimg.cc/VN0TKVHz/DALL-E-2024-07-20-21-15-18-A-detailed-and-relevant-illustration-of-the-Spot-Check-project-for-early.webp",
+        description: "AI-driven skin cancer detection",
+        link: "https://github.com/Sreechandh22/HackMIT",
+    },
+    {
+        img: "https://i.postimg.cc/Y91PHmHV/DALL-E-2024-07-20-21-19-19-A-highly-detailed-and-accurate-illustration-of-the-Clip-Centauri-project.webp",
+        description: "Advanced clipboard manager",
+        link: "https://github.com/Sreechandh22/ClipCentauri",
     },
     {
         img: "https://i.postimg.cc/9FGkPp0s/DALL-E-2023-12-11-19-59-17-An-image-illustrating-the-Safe-Side-project-a-cutting-edge-emergency.png",
-        description: "In a lifesaving blend of tech and emergency preparedness, I led the development of SafeSide– a mobile app designed to guide users during active shooter situations with real-time, data-driven evacuation routes. ",
+        description: "Lifesaving emergency app ",
         link: "https://docs.google.com/presentation/d/1EUVMYWGnS6hZUFlFK_QXBeGXTspLorB16OprJDfExcg/edit#slide=id.g2118dbc31e5_1_100",
     },
-    {
-        img: "https://i.postimg.cc/15QSZ4qh/DALL-E-2023-12-11-20-17-33-A-portrait-image-showcasing-the-Special-Wheels-project-associated-wit.png",
-        description: " I steered the project, infusing MATLAB magic into a special-needs go-kart. It was a journey of marrying mechanical engineering with control systems, where I transformed challenges into triumphs, elevating the kart's performance and joy for its riders.",
-        link: "https://www.youtube.com/watch?v=CbzaHm2dbsY",
-    },
-    {
-        img: "https://i.postimg.cc/dVVzqCQX/DALL-E-2023-12-11-20-20-01-A-portrait-image-representing-the-Varuna-Springs-project-at-Arizona-St.png",
-        description: "I turned a creative lens on groundwater analysis. We blended advanced machine learning with remote sensing to ingeniously map groundwater levels with over 95% accuracy, offering vital data for industries like agriculture and environmental management.",
-        link: "https://docs.google.com/presentation/d/1yBjsfSxMTCzIWX5ZB--ld4hwvqDRyMeq2ImdjdzxVrI/edit#slide=id.g132a5a6d9ae_0_0",
-    },
+
     {
         img: "https://i.postimg.cc/cJ8kHMpD/DALL-E-2023-12-11-20-22-06-A-portrait-image-showcasing-the-Harnessing-AI-and-Quantum-Computing-p.png",
-        description: "Blended AI and quantum computing to bolster cybersecurity. Tackled data vulnerabilities in small businesses and homes, reducing cyber threats by 50% with our AI-driven security protocols.",
+        description: "AI-Quantum cybersecurity boost",
         link: "https://docs.google.com/presentation/d/1ArWq_8ZB1y3Z2X0A_C3BHfnb5A5xYCX6MYRdac2vQQk/edit?usp=sharing",
-    },
-    {
-        img: "https://i.postimg.cc/L5vN7yPs/DALL-E-2023-12-11-20-22-38-A-portrait-image-representing-the-Spot-Check-AI-Powered-Skin-Cancer-De.png",
-        description: "Developed an AI-driven web app for early skin cancer detection, harnessing machine learning to analyze images and assess risks effectively.",
-        link: "https://github.com/Sreechandh22/HackMIT",
     },
 ];
 

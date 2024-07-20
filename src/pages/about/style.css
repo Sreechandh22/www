@@ -106,3 +106,16 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
 }
+
+/* Ensure the body or main container does not create an extra scrollbar */
+body, html {
+    overflow: hidden;
+    /* or overflow-x: hidden; overflow-y: hidden; if specific direction needed */
+}
+
+/* Set overflow on a specific element if needed */
+.container {
+    
+    overflow: auto; /* or overflow: auto; for both directions */
+    height: 100vh; /* Example to ensure the container is full height of viewport */
+}

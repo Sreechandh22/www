@@ -50,16 +50,22 @@ yarn -v
 
   - Clone the repository:
 
+   ```sh
    git clone https://github.com/Sreechandh22/www.git
+   ```
    
+   ```sh
    cd www
+   ```
 
 ## Running the Development Server
 
 To start the development server:
 
-yarn dev
-
+   ```sh
+   yarn dev
+   ```
+   
 Open http://localhost:3000 in your browser to view the application.
 
 ## Project Structure

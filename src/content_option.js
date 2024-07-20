@@ -17,7 +17,7 @@ const introdata = {
         fifth: "ML Developer",
         sixth: "AI Enthusiast",
         seventh: "Frontend Developer",
-        eighth: "Funny",
+        // eighth: "Funny",
         // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
     },
     description: "An inventive student who transforms complex challenges into elegant technological solutions with a passion for data-driven impact and a zest for continuous learning.",
@@ -27,15 +27,16 @@ const introdata = {
 const dataabout = {
     title: "But... Who am I?",
     aboutme: "Hello world! \n\n I'm Sreechandh Devireddy, a computer science enthusiast who believes code can save the world, or at least make it a bit less confusing. When I'm not busy being a human debugger or a code whisperer at Arizona State University, you can find me diving deep into AI models, like that time I tackled the Nepal Water Crisis with nothing but TensorFlow and sheer determination. My stint at IBM? Think of it as my 'Monopoly' phase, where I played with economic algorithms like a pro, turning code into gold. As an IBM Barrett Research Fellow, I’m not just analyzing data; I’m on a first-name basis with every pixel in those medical records, helping forecast colon cancer risks. And my personal project, the AI-powered skin cancer app, wasn’t just a coding sprint - it was a marathon with a cause, sprinting past the finish line of innovation. Off the clock, I might be found philosophizing about how my next project could be the next big thing or contemplating the mysteries of the universe, like why printers never work when you need them most. In a nutshell, I'm the guy who's turning caffeine and pizza into smart solutions and maybe, just occasionally, into the latest meme."
-    
-    ,
 };
+
+console.log(dataabout);
+
 
 const ResumeComponent = () => {
     const [showImage, setShowImage] = useState(false);
 
     const resume = {
-        resumeLink: "https://drive.google.com/file/d/1mKNBSwNHY3_-9T6stQQkktx68_QU_gc6/view",
+        resumeLink: "https://drive.google.com/file/d/18xzsZ27ybZBWqLgHjK9ShGk_XeIODzhl/view?usp=sharing",
         title: "My Resume",
         description: "Explore my professional journey, technical skills, and academic achievements.",
         downloadText: "View Resume",
@@ -75,10 +76,22 @@ const ResumeComponent = () => {
 export default ResumeComponent;
 
     
-const worktimeline = [{
+const worktimeline = [
+    {
+        jobtitle: "Software Engineering Intern",
+        where: "LabToMarket",
+        date: "2024",
+    },
+    {
+        jobtitle: "Backend Engineer",
+        where: "Jirani Software",
+        date: "2024",
+    },
+
+    {
         jobtitle: "Research Intern",
         where: "IBM",
-        date: "2023",
+        date: "2024",
     },
     {
         jobtitle: "Technological Consultant",
@@ -92,18 +105,28 @@ const worktimeline = [{
     },
 ];
 
-const skills = [{
-        name: "Python",
-    },
-    
-    {
-        name: "C/C++",
-    },
-    
+const skills = [
     {
         name: "Java",
     },
-    
+
+    {
+        name: "Python",
+    },
+    {
+        name: "Tensorflow",
+    },
+    {
+        name: "Pytorch",
+    },
+    {
+        name: "Spark",
+    },
+
+    {
+        name: "C/C++",
+    },
+        
     {
         name: "Bash",
     },
@@ -122,6 +145,9 @@ const skills = [{
 
     {
         name: "Network Exploitation",
+    },
+    {
+        name: "ReachJS",
     },
 ];
 

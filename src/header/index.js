@@ -45,13 +45,13 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                   <a 
-                      href="https://drive.google.com/file/d/1mKNBSwNHY3_-9T6stQQkktx68_QU_gc6/view" 
+                      href="https://drive.google.com/file/d/18xzsZ27ybZBWqLgHjK9ShGk_XeIODzhl/view?usp=sharing" 
                       target="_blank" 
                       className="my-3" 
                       onClick={(e) => {
                           e.preventDefault(); // Prevent default anchor link behavior
                           handleToggle(); // Your toggle function
-                          window.open("https://drive.google.com/file/d/1mKNBSwNHY3_-9T6stQQkktx68_QU_gc6/view", "_blank"); // Open the resume link in a new tab
+                          window.open("https://drive.google.com/file/d/18xzsZ27ybZBWqLgHjK9ShGk_XeIODzhl/view?usp=sharing", "_blank"); // Open the resume link in a new tab
                       }}
                   >
                       Resume

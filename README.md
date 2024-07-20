@@ -14,7 +14,6 @@ Welcome to my personal portfolio website! This portfolio showcases my profession
 - [Building for Production](#building-for-production)
 - [Deployment](#deployment)
 - [License](#license)
-- [Contributing](#contributing)
 - [Contact](#contact)
 
 ## Introduction
@@ -65,7 +64,7 @@ To start the development server:
    ```sh
    yarn dev
    ```
-   
+
 Open http://localhost:3000 in your browser to view the application.
 
 ## Project Structure
@@ -87,3 +86,28 @@ Open http://localhost:3000 in your browser to view the application.
       ├── README.md
       ├── package.json
       └── yarn.lock
+
+## Building for Production
+
+Building for Production:
+
+   ```sh
+   yarn build
+   ```
+
+## Deployment
+
+This project is set up to deploy on Netlify, taking advantage of its continuous deployment from GitHub. Commit your changes to the main branch to trigger a deployment automatically.
+
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+## Contact
+
+For any questions or collaboration ideas, please contact me at:
+
+GitHub: Sreechandh22
+Email: sreechandh2204@gmail.com

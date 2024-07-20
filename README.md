@@ -44,6 +44,7 @@ Verify the installations by running:
 ```sh
 node -v
 yarn -v
+```
 
 ### Installation
 

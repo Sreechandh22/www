@@ -1,0 +1,41 @@
+/* src/components/BlogCard.css */
+.blog-card {
+    border: 2px solid #28a745;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
+    background-color: #121212;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blog-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #28a745;
+  }
+  
+  .blog-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,220 @@
+/* src/pages/experience/experience.css */
+.experience-page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  color: var(--text-color);
+  text-align: left;
+}
+
+/* Scrollable container */
+.experience-scroll-container {
+  max-height: 70vh; /* Restrict height to allow scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Space for scrollbar */
+}
+
+/* Dropdown filter styling */
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color-2);
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-button .arrow {
+  margin-left: 10px;
+}
+
+.dropdown-button:hover {
+  background-color: var(--text-color-2);
+  color: var(--primary-color);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 1px solid var(--text-color-2);
+}
+
+.dropdown-menu div {
+  color: var(--text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu div:hover {
+  background-color: var(--text-color-2);
+  color: var(--primary-color);
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  padding: 20px 0; /* Added padding for spacing */
+  margin-left: 40px; /* Space for timeline line */
+}
+
+/* Gradient Timeline Line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #20ec53, #17a862);
+  border-radius: 3px;
+}
+
+/* Each item on the timeline */
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 60px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 0.6s forwards;
+  animation-delay: var(--animation-delay); /* Dynamic delay for staggered effect */
+}
+
+/* Circle indicator with icon on the timeline */
+.timeline-item::before {
+  content: '\f0b1'; /* Example Font Awesome icon code */
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  font-size: 20px;
+  color: var(--text-color-2);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Curved connections */
+.timeline-item + .timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 2px;
+  height: calc(100% - 15px);
+  background-color: var(--text-color-2);
+  border-radius: 1px;
+  z-index: -1;
+  clip-path: path('M10,0 Q0,25 10,50 Q20,75 10,100');
+}
+
+/* Content of each timeline item */
+.timeline-content {
+  background-color: #312f2f;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--text-color-2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.timeline-content h3 {
+  font-size: 1.2em;
+  color: var(--text-color-3);
+}
+
+.timeline-content p {
+  font-size: 1em;
+  margin: 5px 0 15px 0;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+.timeline-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.timeline-content ul li {
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+/* Skill capsules styling */
+/* Skill capsules styling */
+.skills {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-capsules {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-capsule {
+  padding: 8px 16px;
+  border-radius: 20px; /* Rounded capsule shape */
+  background-color: #17a862; /* Darker green color */
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adjust hover color for skill capsules */
+.skill-capsule:hover {
+  background-color: #136c51; /* Even darker on hover */
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* CSS for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

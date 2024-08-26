@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext ,socialprofils } from "../content_option";
+import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -17,15 +17,14 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
+          <Link className="navbar-brand nav_ac" to="/">
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
-          <Themetoggle />
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
-            {!isActive ? <VscClose /> : <VscGrabber />}
-          </button>
-          
+            <Themetoggle />
+            <button className="menu__button nav_ac" onClick={handleToggle}>
+              {!isActive ? <VscClose /> : <VscGrabber />}
+            </button>
           </div>
         </div>
 
@@ -34,31 +33,56 @@ const Headermain = () => {
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
+                  {/* Home Link */}
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <Link onClick={handleToggle} to="/" className="my-3">
+                      Home
+                    </Link>
                   </li>
+                  {/* About Link */}
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                    <Link onClick={handleToggle} to="/about" className="my-3">
+                      About
+                    </Link>
                   </li>
+                  {/* Experience Link */}
                   <li className="menu_item">
-                  <a 
-                      href="https://drive.google.com/file/d/18xzsZ27ybZBWqLgHjK9ShGk_XeIODzhl/view?usp=sharing" 
-                      target="_blank" 
-                      className="my-3" 
+                    <Link onClick={handleToggle} to="/experience" className="my-3">
+                      Experience
+                    </Link>
+                  </li>
+                  {/* Portfolio Link */}
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/portfolio" className="my-3">
+                      Portfolio
+                    </Link>
+                  </li>
+                  {/* Blog Link */}
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/blog" className="my-3">
+                      Blog
+                    </Link>
+                  </li>
+                  {/* Resume Link */}
+                  <li className="menu_item">
+                    <a
+                      href="https://drive.google.com/file/d/18xzsZ27ybZBWqLgHjK9ShGk_XeIODzhl/view?usp=sharing"
+                      target="_blank"
+                      className="my-3"
                       onClick={(e) => {
-                          e.preventDefault(); // Prevent default anchor link behavior
-                          handleToggle(); // Your toggle function
-                          window.open("https://drive.google.com/file/d/1ey-Luysv0PFP5ffel_F0BkQlhJcujQlo/view", "_blank"); // Open the resume link in a new tab
+                        e.preventDefault();
+                        handleToggle();
+                        window.open("https://drive.google.com/file/d/1ey-Luysv0PFP5ffel_F0BkQlhJcujQlo/view", "_blank");
                       }}
-                  >
+                    >
                       Resume
-                  </a>
-              </li>
+                    </a>
+                  </li>
+                  {/* Contact Link */}
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                    <Link onClick={handleToggle} to="/contact" className="my-3">
+                      Contact
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -70,7 +94,6 @@ const Headermain = () => {
       <div className="br-bottom"></div>
       <div className="br-left"></div>
       <div className="br-right"></div>
-      
     </>
   );
 };

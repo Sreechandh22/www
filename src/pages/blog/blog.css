@@ -1,0 +1,21 @@
+/* src/pages/blog/blog.css */
+.blog-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .blog-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #28a745;
+  }
+  
+  .blog-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  

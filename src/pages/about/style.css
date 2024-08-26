@@ -1,121 +1,215 @@
+/* General Spacing for Sections */
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw);
+  margin-bottom: calc(3rem + 5.128vw);
 }
 
+/* Table and Border Styling */
 .table td,
 .table th {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .t_border {
-    border-color: var(--text-color) !important;
+  border-color: var(--text-color) !important;
 }
 
-.progress-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 15px 0 20px;
-    font-family: 'Courier New', sans-serif;
-}
-
-/* Standardize animation names and ensure browser compatibility */
-@-webkit-keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
-
-@keyframes animate-positive {
-    0% {
-        width: 0%;
-    }
-}
-
+/* Title Styling */
 .section-title {
-    font-size: 45px;
+  font-size: 45px;
 }
 
-/* Ensure consistent animation handling across browsers */
+/* Animation for Content */
 @-webkit-keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-
-    to {
-        opacity: 1;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
 
-    to {
-        opacity: 1;
-        transform: translateZ(0);
-    }
+/* Skills Grid Styling */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Slightly larger cards */
+  gap: 20px; /* Increased gap for more space between skills */
+  margin-top: 20px;
 }
 
 .skill-card {
-    width: 150px;
-    height: 80px;
-    margin: 10px;
-    border: 1px solid transparent;
-    /* Improved transparent border declaration */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(101, 255, 114, 0.863);
-    padding: 15px;
-    background-color: #1efc43cb;
-    position: relative;
-    transform: perspective(1px) translateZ(0);
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Courier New', sans-serif;
+  background-color: rgba(30, 50, 40, 0.8); /* Darker background for contrast */
+  color: var(--text-color);
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 20px; /* Increased border radius for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  font-family: 'Courier New', sans-serif;
+  font-weight: 700;
 }
 
 .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgb(123, 248, 112);
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+  background-color: rgba(30, 50, 40, 0.9); /* Slightly darker on hover */
 }
 
-.card-title {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Courier New', sans-serif;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.skill-card a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  height: 100%; /* Ensures the entire card is clickable */
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
+.skill-card a:hover {
+  color: var(--text-color-2);
 }
 
-/* Ensure the body or main container does not create an extra scrollbar */
-body, html {
-    overflow: hidden;
-    /* or overflow-x: hidden; overflow-y: hidden; if specific direction needed */
+/* Decorative line under each skill card */
+.skill-card::before {
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+  width: 60%;
+  height: 3px;
+  background-color: var(--text-color-2);
+  margin: 0 auto 15px;
+  transition: width 0.3s ease;
 }
 
-/* Set overflow on a specific element if needed */
-.container {
-    
-    overflow: auto; /* or overflow: auto; for both directions */
-    height: 100vh; /* Example to ensure the container is full height of viewport */
+.skill-card:hover::before {
+  width: 80%;
+}
+
+/* About Me Section Styles */
+.About-header {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  color: var(--text-color);
+  text-align: left;
+  overflow-y: auto;
+  height: 100vh;
+  background: linear-gradient(135deg, #0b0505, #000000); /* Gradient for depth */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Slightly darker shadow */
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Fun Facts Section */
+.About-header ul {
+  list-style: none;
+  padding: 0;
+}
+
+.About-header ul li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 16px;
+  line-height: 1.8; /* Increased line height for readability */
+  font-style: italic;
+}
+
+.About-header ul li::before {
+  content: "⭐"; /* Star icon for fun facts */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+  color: var(--text-color-2);
+}
+
+/* Text and Paragraph Styling */
+.About-header p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+/* Buttons and Interactivity */
+.About-header button {
+  background-color: var(--text-color-2);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.About-header button:hover {
+  background-color: var(--text-color-3);
+  transform: scale(1.05);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .About-header {
+      padding: 20px;
+  }
+
+  .skill-card {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .About-header p {
+      font-size: 1rem;
+  }
+}
+
+/* Additional Custom Styles for Header Elements */
+h3.color_sec {
+  color: var(--text-color-2);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Courier New', sans-serif;
+}
+
+h1.display-4 {
+  font-family: 'Courier New', sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+/* Custom scrollbar styling */
+.About-header::-webkit-scrollbar {
+  width: 8px;
+}
+
+.About-header::-webkit-scrollbar-track {
+  background: #333333; /* Track color */
+}
+
+.About-header::-webkit-scrollbar-thumb {
+  background-color: #20ec53; /* Scrollbar thumb color */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+.About-header::-webkit-scrollbar-thumb:hover {
+  background-color: #17a862; /* Hover color for scrollbar thumb */
 }

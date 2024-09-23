@@ -39,11 +39,11 @@ const Experience = () => {
       company: 'Jirani Software at ASU, Tempe, AZ',
       dates: 'Jan 2024 - May 2024',
       details: [
-        'Prepared the Jetson robot Python API, adding functionalities for 5 degrees of movement and integrating the backend with .NET.',
-        'Spearheaded a K-12 programming initiative in Africa, using Microsoft Access to track progress, boosting proficiency by 35%.',
+        'Prepared a custom offline digital library solution using Java and Spring Boot, enhancing network capabilities to support over 2,000 users daily and integrating advanced caching mechanisms for seamless digital resource access.',
+        'Spearheaded a data pipeline with Apache Spark and Python, automating synchronization for 1500+ users, enhancing user experience.'
       ],
-      skills: ['Python', 'API Development', 'C#', '.NET']
-    },
+      skills: ['Python', 'API Development', 'C#', '.NET', 'Java', 'Spring Boot', 'Apache Spark']
+    }
     {
       id: 4,
       type: 'Teaching',

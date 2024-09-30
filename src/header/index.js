@@ -66,13 +66,13 @@ const Headermain = () => {
                   {/* Resume Link */}
                   <li className="menu_item">
                     <a
-                      href="https://drive.google.com/file/d/1sRI73y4al1bdMQ5-6NbTN3gT008z8K6U/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1qGyq4bRazqdzeXTQ6yrKGJA28Q_4Rga3/view?usp=sharing"
                       target="_blank"
                       className="my-3"
                       onClick={(e) => {
                         e.preventDefault();
                         handleToggle();
-                        window.open("https://drive.google.com/file/d/1sRI73y4al1bdMQ5-6NbTN3gT008z8K6U/view?usp=sharing", "_blank");
+                        window.open("https://drive.google.com/file/d/1qGyq4bRazqdzeXTQ6yrKGJA28Q_4Rga3/view?usp=sharing", "_blank");
                       }}
                     >
                       Resume

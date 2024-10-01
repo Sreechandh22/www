@@ -6,7 +6,7 @@ import './blog.css';
 // Updated blog posts data with full content
 const blogPosts = [
   {
-    id: 1,
+    id: 3,
     title: 'Lessons from a Dual Degree in Computer Science and Statistics',
     content: `
       <h2>Introduction: My Journey into the Intersection of Computer Science and Statistics</h2>
@@ -30,7 +30,7 @@ const blogPosts = [
     `
   },
   {
-    id: 2,
+    id: 4,
     title: 'Navigating the Challenges of Being an International Student',
     content: `
       <h2>Introduction: My Journey from India to the USA</h2>
@@ -55,7 +55,7 @@ const blogPosts = [
     `
   },
   {
-    id: 3,
+    id: 1,
     title: 'The Power of AI in Transforming Healthcare',
     content: `
       <h2>Introduction: The Power of AI in Transforming Healthcare</h2>
@@ -83,6 +83,39 @@ const blogPosts = [
       <p>To anyone considering a path in AI, especially in healthcare, my advice is simple: embrace the challenges and don’t be afraid to make mistakes. Every setback is an opportunity to learn and grow. Stay curious, stay ethical, and most importantly, stay human. AI has the power to change the world, but it’s up to us to make sure it does so for the better.</p>
     `
   },
+  {
+    id: 2,
+    title: 'From Backend to Frontend: Building Scalable Full-Stack Applications',
+    content: `
+      <h2>Introduction: The Hackathon That Almost Fell Apart</h2>
+      <p>Let me start this blog by sharing a funny story from my first hackathon at school. My team and I were extremely excited but had no clue how to integrate the backend and frontend components of our project. In fact, we were so confused that we decided to split the work across two laptops—one running the backend and the other handling the frontend. When it came time to present, we had no idea how to connect the two. So, we presented from two laptops, switching between them to showcase our project. While it was hilarious and embarrassing at the time, it’s one of my favorite memories because it highlights how far I’ve come in mastering full-stack development!</p>
+
+      <h3>Understanding Full-Stack Development: The Basics</h3>
+      <p>Full-stack development is about building both the backend (server, database) and frontend (user interface) of an application. It requires understanding how to design APIs, manage databases, and ensure that data is efficiently passed from server to client, all while making sure the frontend is interactive and user-friendly.</p>
+      <p>In the years since that first hackathon, I’ve worked on several full-stack projects, and the experience has given me a deep appreciation for how different technologies can work together to build scalable applications. Full-stack development isn't just about writing code; it’s about architecting a solution that’s efficient, maintainable, and user-centered.</p>
+
+      <h3>1. The Backend: Building a Solid Foundation</h3>
+      <p>The backend is the engine that powers your application. It's where business logic is executed, databases are queried, and APIs are managed. In my project work, I typically use technologies like <strong>Spring Boot</strong> and <strong>Flask</strong> for building RESTful APIs, along with databases like <strong>SQL</strong> and <strong>MongoDB</strong> for managing data.</p>
+      <p>One of the key lessons I’ve learned from backend development is the importance of designing scalable systems. Early in my career, I worked on an emergency response app that needed to handle thousands of users in real time. We had to make sure the backend was capable of scaling with demand, implementing techniques like <em>caching</em> and <em>load balancing</em> to keep the system running smoothly under heavy traffic.</p>
+
+      <h3>2. The Frontend: Creating an Intuitive User Experience</h3>
+      <p>If the backend is the engine, the frontend is the user interface—the part of the application that users interact with. Technologies like <strong>React</strong> and <strong>Angular</strong> are essential for building dynamic and responsive web applications.</p>
+      <p>In one of my projects, we developed a water crisis analysis tool using remote sensing data. The backend was responsible for heavy data processing, but the real challenge was presenting this data in a way that made sense to users. I focused on building a clean, intuitive UI with interactive charts and maps to help users visualize complex data in a user-friendly format.</p>
+
+      <h3>3. Integrating the Backend and Frontend</h3>
+      <p>This is where my hackathon story becomes relevant again. Back then, I didn’t fully understand how to bridge the gap between backend services and the frontend UI. Today, however, integrating backend and frontend is a crucial part of full-stack development. This is done using <strong>APIs</strong> (Application Programming Interfaces), which allow the frontend to communicate with the backend, sending and receiving data.</p>
+      <p>During one project, I built a machine learning model to analyze medical data for predictive analysis. The backend used Python with Flask to manage the AI model, and the frontend was built using React. The key was to expose the model through a RESTful API so that the frontend could request predictions and display results in real-time.</p>
+
+      <h3>4. Lessons Learned: Building for Scalability and Maintenance</h3>
+      <p>Over time, I’ve learned that building scalable full-stack applications isn’t just about connecting the pieces; it’s about designing them to work together efficiently over time. Whether it’s handling a large number of API requests or ensuring the frontend remains responsive under heavy loads, scalability is key.</p>
+      <p>One valuable lesson I’ve learned is the importance of using <strong>microservices</strong>. Breaking down your application into smaller, independent services helps ensure scalability and makes maintenance easier. In my experience, deploying a monolithic app is often faster in the short term but can become a nightmare to maintain. Microservices, on the other hand, allow you to update individual components without affecting the entire system.</p>
+
+      <h3>Conclusion: From Two Laptops to a Full-Stack Engineer</h3>
+      <p>Looking back, that hackathon was just the beginning of my journey in full-stack development. Today, I’ve mastered the tools and techniques needed to build scalable, maintainable applications that integrate the backend and frontend seamlessly. From working on emergency response apps to building AI-driven solutions, I’ve learned that full-stack development is about more than just writing code—it’s about creating efficient, user-friendly applications that can grow with the needs of the users.</p>
+      <p>And while I’ll never forget presenting from two laptops, I’m proud of how far I’ve come. If you’re new to full-stack development, my advice is to embrace the challenges. Every mistake is a learning opportunity, and every successful integration is a step towards mastering the craft!</p>
+    `
+  },
+
 ];
 
 const BlogDetail = () => {

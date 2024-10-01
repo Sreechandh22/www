@@ -7,18 +7,24 @@ import './blog.css';
 const blogPosts = [
   { 
     id: 1, 
+    title: 'Building Effective AI Models for Healthcare', 
+    excerpt: 'Delve into the process of creating AI models for healthcare, focusing on data quality, algorithm selection, and the ethical considerations necessary for impactful and fair AI applications.' 
+  },
+  { 
+    id: 2, 
+    title: 'From Backend to Frontend: Building Scalable Full-Stack Applications', 
+    excerpt: 'An overview of the full-stack development process, from architecting a backend system to creating dynamic and user-friendly frontend interfaces, with lessons from my personal project experiences—including a funny hackathon story!' 
+  },
+
+  { 
+    id: 3, 
     title: 'Lessons from a Dual Degree in Computer Science and Statistics', 
     excerpt: 'Explore how the combination of Computer Science and Statistics has provided me with a unique approach to problem-solving and the key lessons learned throughout my academic journey.' 
   },
   { 
-    id: 2, 
+    id: 4, 
     title: 'Navigating the Challenges of Being an International Student in the USA', 
     excerpt: 'A personal reflection on the experiences and challenges faced as an international student in the United States, and the strategies that helped me succeed academically and personally.' 
-  },
-  { 
-    id: 3, 
-    title: 'Building Effective AI Models for Healthcare', 
-    excerpt: 'Delve into the process of creating AI models for healthcare, focusing on data quality, algorithm selection, and the ethical considerations necessary for impactful and fair AI applications.' 
   },
   // Additional blog posts can be added here.
 ];

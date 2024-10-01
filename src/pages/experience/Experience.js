@@ -43,7 +43,7 @@ const Experience = () => {
         'Spearheaded a data pipeline with Apache Spark and Python, automating synchronization for 1500+ users, enhancing user experience.'
       ],
       skills: ['Python', 'API Development', 'C#', '.NET', 'Java', 'Spring Boot', 'Apache Spark']
-    }
+    },
     {
       id: 4,
       type: 'Teaching',

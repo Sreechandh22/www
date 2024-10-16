@@ -56,6 +56,7 @@
 .po_item:hover {
     grid-row: span 2; /* Make the item span two rows on hover */
     grid-column: span 2; /* Make the item span two columns on hover */
+    transform: scale(1.05);
 }
 
 .po_item .content a {

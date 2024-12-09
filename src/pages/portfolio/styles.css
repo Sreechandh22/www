@@ -1,0 +1,36 @@
+.portfolio-page {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .portfolio-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #28a745; /* Green for headings */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation for title */
+  }
+  
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import withRouter from "../hooks/withRouter";
 import { Home } from "../pages/home";
-import { Portfolio } from "../pages/portfolio";
+import Portfolio from '../pages/portfolio';
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Blog } from "../pages/blog/blog";

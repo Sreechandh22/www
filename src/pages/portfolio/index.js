@@ -1,38 +1,62 @@
 import React from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import ProjectCard from "./ProjectCard";
+import "./styles.css";
 
-export const Portfolio = () => {
+const projects = [
+  {
+    id: 1,
+    title: "ClinicalBERT: AI Model for Healthcare",
+    description: "Developed a model using ClinicalBERT to analyze EHR data for colon cancer risk prediction, leveraging advanced NLP techniques.",
+    link: "https://github.com/Sreechandh22/ClinicalBERT"
+  },
+  {
+    id: 2,
+    title: "Groundwater Algorithm",
+    description: "Built a machine learning model for groundwater level predictions using Sentinel-2 datasets, leveraging Google Earth Engine.",
+    link: "https://github.com/Sreechandh22/Groundwater-Algorithm"
+  },
+  {
+    id: 3,
+    title: "SpotCheck: Skin Cancer Detection App",
+    description: "Created a mobile app for early skin cancer detection using image recognition, utilizing TensorFlow Lite for on-device predictions.",
+    link: "https://github.com/Sreechandh22/SPOTCHECK"
+  },
+  {
+    id: 4,
+    title: "ClipCentauri: Your Ultimate Clipboard Manager",
+    description: "A feature-rich clipboard management application that allows users to store, access, and organize up to 100 clipboard items with ease. Highlights include starred items, quick access, and customizable settings.",
+    link: "https://github.com/Sreechandh22/ClipCentauri"
+    },
+  {
+    id: 5,
+    title: "SafeSide: Your Personal Safety Companion",
+    description: "A comprehensive safety app designed to guide individuals to safety during active shooter emergencies. Features include real-time evacuation plans, monitored updates, and an emergency button.",
+    link: "https://docs.google.com/presentation/d/1EUVMYWGnS6hZUFlFK_QXBeGXTspLorB16OprJDfExcg/edit#slide=id.g2118dbc31e5_1_100"
+    },
+  {
+    id: 6,
+  title: "Securing the IoT: Harnessing AI and Quantum Computing",
+  description: "A comprehensive framework for IoT security, leveraging AI for malware detection and quantum computing for unbreakable encryption. Focused on enhancing privacy and reducing cyber threats.",
+  link: "https://docs.google.com/presentation/d/1ArWq_8ZB1y3Z2X0A_C3BHfnb5A5xYCX6MYRdac2vQQk/edit#slide=id.g22cb6aa3376_2_76"
+  },
+];
+
+const Portfolio = () => {
   return (
-    <HelmetProvider>
-      <Container className="About-header">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>{" "}
-          <meta name="description" content={meta.description} />
-        </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
-          <Col lg="8">
-            <h1 className="display-4 mb-4"> Portfolio </h1>{" "}
-            <hr className="t_border my-4 ml-0 text-left" />
-          </Col>
-        </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" loading="lazy" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </Container>
-    </HelmetProvider>
+    <div className="portfolio-page">
+      <h1 className="portfolio-title">My Projects</h1>
+      <div className="portfolio-list">
+        {projects.map((project) => (
+          <ProjectCard 
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
+
+export default Portfolio;

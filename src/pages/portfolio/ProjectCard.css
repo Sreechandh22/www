@@ -1,0 +1,50 @@
+/* */
+
+.project-card {
+    background: rgba(18, 18, 18, 0.9); /* Semi-transparent black */
+    border: 2px solid #28a745;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s, box-shadow 0.5s;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    text-align: left;
+  }
+  
+  .project-card:hover {
+    transform: rotateY(10deg) rotateX(-5deg);
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.5);
+  }
+  
+  .project-card h3 {
+    font-size: 1.5em;
+    color: #28a745;
+    margin: 15px;
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    color: #fff;
+    margin: 15px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 15px;
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #28a745;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .project-link:hover {
+    background: #28a745;
+    color: #000;
+  }
+
+  
+  
